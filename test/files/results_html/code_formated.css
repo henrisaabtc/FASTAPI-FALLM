@@ -1,0 +1,72 @@
+.barre-langage {
+    background-color: #333; /* Une couleur plus sombre que celle de highlight */
+    color: #fff; /* Couleur du texte blanc */
+    padding: 5px 10px; /* Padding intérieur pour espacer le texte */
+    border-radius: 5px; 
+    font-family: sans-serif; /* Police de caractère */
+    font-size: 16px; /* Taille du texte */
+}
+
+/* Conteneur principal pour le code */
+.highlight { 
+    background-color: #2b2b2b; 
+    color: #f8f8f2; 
+    padding: 10px; 
+    border-radius: 5px; 
+    font-family: 'Consolas', 'Monaco', 'monospace'; 
+    font-size: 14px; 
+    overflow-x: auto;
+}
+
+/* Noms de variables et de fonctions */
+.n { color: #a6e22e; }
+
+/* Opérateurs */
+.o { color: #f92672; }
+
+/* Fonctions intégrées et exceptions */
+.nb { color: #66d9ef; }
+
+/* Parenthèses, crochets */
+.p { color: #f8f8f2; }
+
+/* Chaînes de caractères */
+.s, .s2 { color: #e6db74; }
+
+/* Commentaires */
+.c, .cm, .c1 { color: #75715e; }
+
+/* Mots-clés */
+.k, .kd { color: #f92672; }
+
+/* Types de données */
+.nt { color: #66d9ef; }
+
+/* Constantes */
+.m, .mf, .mh, .mi, .mo, .mb, .mx { color: #ae81ff; }
+
+/* Sélecteurs d'attributs, utilisé pour les balises HTML */
+.na { color: #a6e22e; }
+
+/* Texte régulier */
+.nn { color: #f8f8f2; }
+
+/* Avertissements */
+.err { color: #960050; background-color: #1e0010; }
+
+/* Styling for the ordered list */
+ol {
+    background-color: #f2f2f2; /* Light grey background */
+    padding: 20px; /* Add some padding around the list */
+    border-radius: 8px; /* Rounded corners */
+    width: 300px; /* Set a specific width */
+    /*margin: auto; /* Center the list */
+}
+
+/* Styling for each list item */
+li {
+    font-family: Arial, sans-serif; /* Change the font */
+    color: #333; /* Dark grey color for the text */
+    line-height: 1.6; /* Spacing between lines */
+    margin-bottom: 10px; /* Space between items */
+}

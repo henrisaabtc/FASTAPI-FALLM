@@ -1,0 +1,31 @@
+<head>
+<meta charset="utf-8"/><link href="code_formated.css" rel="stylesheet" type="text/css"/>
+</head>
+<h1>Python Code to Display Folder Contents on Tkinter GUI</h1>
+<p>Here's a Python code that opens a folder and displays its contents on a Tkinter GUI:</p>
+<div class="barre-langage">python</div>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">tkinter</span> <span class="k">as</span> <span class="nn">tk</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">filedialog</span>
+
+<span class="n">root</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Tk</span><span class="p">()</span>
+<span class="n">root</span><span class="o">.</span><span class="n">withdraw</span><span class="p">()</span>
+
+<span class="n">folder_path</span> <span class="o">=</span> <span class="n">filedialog</span><span class="o">.</span><span class="n">askdirectory</span><span class="p">()</span>
+
+<span class="n">files</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">folder_path</span><span class="p">)</span>
+
+<span class="n">listbox</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Listbox</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
+<span class="n">listbox</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+     <span class="n">listbox</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">tk</span><span class="o">.</span><span class="n">END</span><span class="p">,</span> <span class="n">file</span><span class="p">)</span>
+
+<span class="n">root</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</pre></div>
+
+<p><br></p>
+<p>This code first imports the necessary modules, including <code>os</code> for working with files and directories, and <code>tkinter</code> for creating the GUI. It then creates a Tkinter window and hides it using the <code>withdraw()</code> method.</p>
+<p>Next, it uses the <code>askdirectory()</code> method from the <code>filedialog</code> module to prompt the user to select a folder. The selected folder path is stored in the <code>folder_path</code> variable.</p>
+<p>The code then uses the <code>listdir()</code> method from the <code>os</code> module to get a list of all the files in the selected folder. It creates a Tkinter <code>Listbox</code> widget and adds each file name to the listbox using a <code>for</code> loop.</p>
+<p>Finally, it starts the Tkinter event loop using the <code>mainloop()</code> method, which displays the GUI and allows the user to interact with it.</p>
